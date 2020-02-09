@@ -117,7 +117,7 @@ class Epidemic extends Component<EpidemicProps, EpidemicState> {
         name: '疫情统计',
         coordinateSystem: 'geo',
         label: {
-          show: true,
+          show: false,
         },
         map: 'china',
         itemStyle: {

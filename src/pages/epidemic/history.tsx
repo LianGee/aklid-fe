@@ -30,7 +30,6 @@ class History extends Component<HistoryProps, HistoryState> {
 
   componentDidMount(): void {
     historySummary().then(response => {
-      console.log(response.data);
       const x: any = [];
       const confirmedData: any = [];
       const suspectedData: any = [];

@@ -53,4 +53,13 @@ const request = extend({
   credentials: 'include', // 默认请求是否带上cookie
 });
 
+request.interceptors.response.use(async response => {
+  const data = await response.clone().json();
+  if (data && data.status === 30200) {
+    window.location.href = data.data;
+  }
+  return response;
+});
+
+
 export default request;

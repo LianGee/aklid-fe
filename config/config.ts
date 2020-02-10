@@ -87,11 +87,16 @@ export default {
           path: '/user/login',
           component: './user/login',
         },
+        {
+          name: 'register',
+          path: '/user/register',
+          component: './user/register/index'
+        }
       ],
     },
     {
       path: '/',
-      // component: '../layouts/SecurityLayout',
+      component: '../layouts/SecurityLayout',
       routes: [
         {
           path: '/',
@@ -100,19 +105,38 @@ export default {
           routes: [
             {
               path: '/',
-              redirect: '/welcome',
+              redirect: '/epidemic',
+            },
+            {
+              path: '/daily',
+              name: 'daily',
+              icon: 'check-circle',
+              routes: [
+                {
+                  path: '/daily/info',
+                  name: 'info',
+                  icon: 'info-circle',
+                  component: './daily/info/index'
+                },
+                {
+                  path: '/daily/work',
+                  name: 'work',
+                  icon: 'clock-circle',
+                  component: './daily/work/index'
+                },
+                {
+                  path: '/daily/statistic',
+                  name: 'statistic',
+                  icon: 'area-chart',
+                  component: './daily/statistic/index',
+                }
+              ],
             },
             {
               path: '/epidemic',
               name: 'epidemic',
               icon: 'heat-map',
               component: './epidemic/index',
-            },
-            {
-              path: '/welcome',
-              name: 'welcome',
-              icon: 'smile',
-              component: './Welcome',
             },
             {
               path: '/admin',

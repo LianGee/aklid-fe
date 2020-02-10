@@ -1,4 +1,8 @@
 export default {
+  'menu.daily': '日常信息',
+  'menu.daily.info': '信息收集',
+  'menu.daily.work': '工作日报',
+  'menu.daily.statistic': '信息汇总',
   'menu.epidemic': '疫情速览',
   'menu.welcome': '欢迎',
   'menu.more-blocks': '更多区块',

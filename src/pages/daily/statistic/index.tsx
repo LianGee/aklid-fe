@@ -48,12 +48,13 @@ class DailyStatistic extends Component<DailyStatisticProps, DailyStatisticState>
   render() {
     const columns = [
       { title: '姓名', dataIndex: 'chinese_name', keyIndex: 'chinese_name' },
+      { title: '所内', dataIndex: 'is_inner_staff', keyIndex: 'is_inner_staff' },
       { title: '是否在沪', dataIndex: 'in_sh', keyIndex: 'in_sh' },
       { title: '所在地', dataIndex: 'location', keyIndex: 'location' },
       { title: '身体状况', dataIndex: 'health', keyIndex: 'health' },
       { title: '症状', dataIndex: 'symptom', keyIndex: 'symptom' },
       { title: '接触史', dataIndex: 'contact_history', keyIndex: 'contact_history' },
-      { title: '近期外出公共场所', dataIndex: 'access_public', keyIndex: 'access_public' },
+      { title: '近期外出公共场所', dataIndex: 'access_public', keyIndex: 'access_public', width: 60 },
       { title: '返沪日期', dataIndex: 'return_date', keyIndex: 'return_date' },
       { title: '备注', dataIndex: 'note', keyIndex: 'note' },
     ];
